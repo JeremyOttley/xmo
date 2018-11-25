@@ -1,0 +1,12 @@
+xmonad
+xmonad-contrib
+xmobar
+stalonetray
+dmenu
+yeganesh
+scrot
+
+##
+
+git clone https://github.com/JeremyOttley/xmonad-config .xmonad
+ln -s ~/.xmonad/bin/xsession ~/.xsession
