@@ -1,12 +1,24 @@
-xmonad
-xmonad-contrib
-xmobar
-stalonetray
-dmenu
-yeganesh
-scrot
+#!/usr/bin/env bash
 
-##
+set -Eeuxo pipefail
 
-git clone https://github.com/JeremyOttley/xmonad-config .xmonad
-ln -s ~/.xmonad/bin/xsession ~/.xsession
+IFS=$'\n\t'
+
+trap 'echo Error at about $LINENO' ERR
+
+
+sudo pacman -S --noconfirm xmonad xmonad-contrib xmobar stalonetray dmenu scrot cabal-install xcompmgr
+sudo cabal update
+sudo cabal install --global yeganesh
+
+git clone https://github.com/jeremyottley/xmo.git .xmonad
+#ln -s ~/.xmonad/bin/xsession ~/.xsession
+
+git clone https://github.com/jeremyottley/st.git
+cd st
+make
+sudo make install
+cd ~
+
+git clone https://github.com/jeremyottley/.fonts.git
+sudo fc-cache -fv
