@@ -1,0 +1,116 @@
+! special
+*.foreground:   #f1ebeb
+*.background:   #161616
+*.cursorColor:  #f1ebeb
+
+! black
+*.color0:       #1b1b1b
+*.color8:       #4d4d4d
+
+! red
+*.color1:       #880027
+*.color9:       #ff0048
+
+! green
+*.color2:       #728f00
+*.color10:      #b9e800
+
+! yellow
+*.color3:       #9e8f00
+*.color11:      #ffe700
+
+! blue
+*.color4:       #005189
+*.color12:      #0096ff
+
+! magenta
+*.color5:       #7d004e
+*.color13:      #ff009e
+
+! cyan
+*.color6:       #007c72
+*.color14:      #00ffea
+
+! white
+*.color7:       #c1c1c1
+*.color15:      #ffffff
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+XTerm.vt100.faceName: Fira Mono:size=11:antialias=true
+Xft.rgba: rgb
+Xft.dpi: 96
+XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.selectToClipboard: true
+Xcursor*theme: Adwaita
+XTerm.scaleHeight: 1.01
+Xmessage*defaultButton:            okay
+Xmessage*form.message.Scroll:      WhenNeeded
+
+*transparent:                      false
+*lineSpace:                        0
+*cursorBlink:                      true
+*cursorUnderline:                  true
+*saveLines:                        4096
+*shading:                          75
+*mouseWheelScrollPage:             false
+*pointerBlank:                     true
+*imLocale:                         en_US.utf8
+*utf8Title:                        true
+
+*xterm*metaSendsEscape:            true
+*xterm*renderFont:                 true
+*xterm*bellIsUrgent:               true
+*xterm*allowSendEvents:            false
+*xterm*sessionMgt:                 false
+*xterm*VT100*colorULMode:          on
+*xterm*VT100*colorBDMode:          off
+*xterm*VT100.titeInhibit:          off
+*xterm*VT100.translations:         #override \n Shift <Key>Home: scroll-back(4096) \n Shift <Key>End: scroll-forw(4096)
+*xterm*VT100.geometry:             80x32
+*xterm*SimpleMenu*background:      #353535
+*xterm*SimpleMenu*foreground:      #AAA
+*xterm*dynamicColors:              true
+*xterm*eightBitInput:              true
+*xterm*eightBitControl:            false
+*xterm*eightBitOutput:             true
+*xterm*trimSelection:              true
+*xterm*charClass:                  33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+
+XClock*foreground: #807A86
+XClock*background: #1D1C25
+XClock*width:                      350
+XClock*height:                     350
+XClock*update:                     1
+XClock*hourColor:                  cyan
+XClock*minuteColor:                cyan
+XClock*secondColor:                red
+XClock*majorColor:                 red
+XClock*minorColor:                 cyan
+
+st.termname:    st-256color
+st.cwscale:     1.1
+st.chscale:     1.1
+st.bellvolume:  0
+st.borderpx:    10px
+st.letterspace: -1
+
+URxvt.font: xft:Hack:size=14,xft:Symbola:size=14
+URxvt.letterSpace: -1
+
+URxvt.internalBorder: 25
+
+URxvt.loginShell: true
+
+URxvt.scrollBar: false
+
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+URxvt.depth: 32
+
+URxvt.background: rgba:1111/1111/1111/dddd
