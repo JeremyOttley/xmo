@@ -7,12 +7,11 @@ IFS=$'\n\t'
 trap 'echo Error at about $LINENO' ERR
 
 
-sudo pacman -S --noconfirm xmonad xmonad-contrib xmobar stalonetray dmenu scrot cabal-install xcompmgr
+sudo pacman -S --noconfirm xmonad xmonad-contrib xmobar stalonetray dmenu scrot cabal-install xcompmgr ruby
 sudo cabal update
 sudo cabal install --global yeganesh
 
 git clone https://github.com/jeremyottley/xmo.git .xmonad
-#ln -s ~/.xmonad/bin/xsession ~/.xsession
 
 git clone https://github.com/jeremyottley/st.git
 cd st
@@ -22,3 +21,10 @@ cd ~
 
 git clone https://github.com/jeremyottley/.fonts.git
 sudo fc-cache -fv
+
+touch ~/.profile
+echo "PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"" >> ~/.profile
+echo "export GEM_HOME=$HOME/.gem" >> ~/.profile
+source ~/.profile
+
+gem install httparty
