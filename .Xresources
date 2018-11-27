@@ -49,6 +49,7 @@ Xcursor*theme: Adwaita
 XTerm.scaleHeight: 1.01
 Xmessage*defaultButton:            okay
 Xmessage*form.message.Scroll:      WhenNeeded
+xterm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
 
 *transparent:                      false
 *lineSpace:                        0
